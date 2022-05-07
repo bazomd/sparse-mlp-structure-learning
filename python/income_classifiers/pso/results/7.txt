@@ -1,0 +1,184 @@
+experiment_num: 7
+
+Parameters:
+random_state=7
+population=50
+search_space_dimensions=(119, 5, 1)
+learning_rate=0.01
+alpha=0.8
+epochs=1000
+patience=25
+early_stopping_threshold=1e-06
+num_init_connections=(15, 5)
+connections_limits=((2, 30), (2, 10))
+
+
+Configurations:
+iterations: 25, w=1, c_1=10, c_2=10, epsilon=0.5
+iterations: 25, w=0.9, c_1=10, c_2=10, epsilon=0.5
+iterations: 10, w=0.9, c_1=1, c_2=20, epsilon=0.5
+
+
+best particle:
+train accuracy: 0.8049649798997057
+test accuracy: 0.8113707939665175
+test recall: 0.6651485560064325
+test precision: 0.7780182232346241
+test f1 score: 0.6902043899436682
+
+number of connections: (6, 2)
+
+connected features:
+education_Bachelors
+education_Doctorate
+education_Masters
+education_Prof-school
+marital.status_Married-civ-spouse
+capital.gain: [79999.2 99999. ]
+
+first connectivity matrix:
+[[0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [0 1 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 1 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]]
+
+second connectivity matrix:
+[[0]
+ [1]
+ [1]
+ [0]
+ [0]]
+
+first layer weights:
+tensor(indices=tensor([[ 1,  1,  2,  2,  2,  2],
+                       [30, 68, 25, 26, 28, 34]]),
+       values=tensor([-4.1419, -3.7765, -3.4543, -5.6661, -4.2528, -4.7043]),
+       size=(5, 119), nnz=6, layout=torch.sparse_coo)
+first layer biases:
+Parameter containing:
+tensor([ 0.0598,  0.5563,  4.0278, -0.0627, -0.0386], requires_grad=True)
+second layer weights:
+tensor(indices=tensor([[0, 0],
+                       [1, 2]]),
+       values=tensor([-0.8188, -3.9156]),
+       size=(1, 5), nnz=2, layout=torch.sparse_coo)
+second layer biases:
+Parameter containing:
+tensor([1.2376], requires_grad=True)
+
+Runtime: 15421.76 seconds

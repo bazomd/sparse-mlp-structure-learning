@@ -1,0 +1,76 @@
+experiment_num: 8
+
+Parameters:
+random_state=8
+population=30
+search_space_dimensions=(12, 6, 3)
+learning_rate=0.01
+alpha=0.7
+epochs=450
+patience=10
+early_stopping_threshold=0.0001
+num_init_connections=(7, 3)
+connections_limits=((2, 10000), (2, 100000))
+
+
+Configurations:
+iterations: 30, w=0.9, c_1=2, c_2=2, epsilon=0.4
+iterations: 30, w=0.9, c_1=4, c_2=4, epsilon=0.4
+iterations: 20, w=0.9, c_1=1, c_2=10, epsilon=0.4
+
+
+best particle:
+train accuracy: 0.85
+test accuracy: 0.9666666666666667
+test recall: 0.9696969696969697
+test precision: 0.9666666666666667
+test f1 score: 0.9665831244778613
+
+number of connections: (4, 2)
+
+connected features:
+sw: [2. 3.]
+pl: [4.35 5.1 ]
+pl: [5.1 6.9]
+
+first connectivity matrix:
+[[0 0 0 0 0 0]
+ [0 0 0 0 0 0]
+ [0 0 0 0 0 0]
+ [0 0 0 0 0 0]
+ [1 0 0 0 0 0]
+ [0 0 0 0 0 0]
+ [0 0 0 0 0 0]
+ [0 0 0 0 0 0]
+ [1 0 0 1 0 0]
+ [1 0 0 0 0 0]
+ [0 0 0 0 0 0]
+ [0 0 0 0 0 0]]
+
+second connectivity matrix:
+[[1 0 1]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+
+first layer weights:
+tensor(indices=tensor([[0, 0, 0, 3],
+                       [4, 8, 9, 8]]),
+       values=tensor([1.4643, 1.5407, 4.3730, 0.2134]),
+       size=(6, 12), nnz=4, layout=torch.sparse_coo)
+first layer biases:
+Parameter containing:
+tensor([-1.9389, -0.1942, -0.1535, -0.2164, -0.2134, -0.1343],
+       requires_grad=True)
+second layer weights:
+tensor(indices=tensor([[0, 2],
+                       [0, 0]]),
+       values=tensor([-4.5553,  5.1118]),
+       size=(3, 6), nnz=2, layout=torch.sparse_coo)
+second layer biases:
+Parameter containing:
+tensor([ 2.0248,  0.6258, -2.8916], requires_grad=True)
+
+Runtime: 811.25 seconds

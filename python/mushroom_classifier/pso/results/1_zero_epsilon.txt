@@ -1,0 +1,245 @@
+experiment_num: 1_zero_epsilon
+
+Parameters:
+random_state=1
+population=100
+search_space_dimensions=(111, 5, 1)
+learning_rate=0.01
+alpha=0.7
+epochs=300
+patience=10
+early_stopping_threshold=0.001
+num_init_connections=(15, 5)
+connections_limits=((2, 100000), (2, 100000))
+
+
+Configurations:
+iterations: 20, w=0.9, c_1=2, c_2=2, epsilon=0
+iterations: 50, w=0.9, c_1=4, c_2=4, epsilon=0
+iterations: 30, w=0.9, c_1=0.5, c_2=10, epsilon=0
+
+
+best particle:
+train accuracy: 0.9856923076923076
+test accuracy: 0.9821538461538462
+test recall: 0.9817371853199879
+test precision: 0.9827665601813999
+test f1 score: 0.9821167607600179
+
+number of connections: (69, 5)
+
+connected features:
+cape-shape_b
+cape-shape_c
+cape-shape_f
+cape-shape_s
+cap-surface_g
+cap-surface_y
+cap-color_u
+cap-color_w
+cap-color_y
+bruises_t
+odor_a
+odor_n
+odor_p
+odor_y
+gill-attachment_f
+gill-size_n
+gill-color_e
+gill-color_p
+gill-color_w
+stalk-shape_t
+stalk-root_b
+stalk-root_c
+stalk-root_e
+stalk-surface-above-ring_f
+stalk-surface-above-ring_s
+stalk-surface-below-ring_k
+stalk-color-above-ring_c
+stalk-color-above-ring_e
+stalk-color-above-ring_n
+stalk-color-above-ring_p
+stalk-color-below-ring_g
+stalk-color-below-ring_o
+stalk-color-below-ring_w
+veil-color_n
+veil-color_o
+veil-color_w
+veil-color_y
+ring-number_o
+ring-type_p
+spore-print-color_b
+spore-print-color_h
+spore-print-color_n
+spore-print-color_r
+spore-print-color_u
+population_a
+population_n
+population_s
+population_v
+habitat_d
+habitat_m
+habitat_u
+habitat_w
+
+first connectivity matrix:
+[[0 1 0 0 0]
+ [1 0 0 0 0]
+ [0 1 0 1 0]
+ [0 0 0 0 0]
+ [0 0 0 1 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 1 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 1 0]
+ [0 0 0 0 1]
+ [0 0 0 1 0]
+ [0 0 1 0 0]
+ [1 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [1 1 1 0 0]
+ [1 0 1 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 1]
+ [0 0 0 1 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [1 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 1 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [1 0 0 1 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 1 0]
+ [0 0 0 1 1]
+ [0 1 0 0 0]
+ [0 0 0 0 0]
+ [0 1 1 0 0]
+ [0 0 0 0 0]
+ [1 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 1 0 1 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 1 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 1]
+ [0 0 0 0 0]
+ [0 0 0 0 1]
+ [0 0 0 0 0]
+ [0 0 0 0 1]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 1 0 0 0]
+ [1 0 0 0 1]
+ [0 0 0 0 1]
+ [0 1 0 0 1]
+ [0 0 0 0 0]
+ [0 0 0 1 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [0 0 0 0 1]
+ [0 0 0 1 1]
+ [0 0 0 0 0]
+ [1 0 0 0 0]
+ [0 0 0 0 0]
+ [1 0 0 0 0]
+ [0 1 0 1 0]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [1 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 0]
+ [1 1 0 1 0]
+ [1 1 0 0 0]
+ [0 0 0 0 0]
+ [0 0 1 0 1]
+ [0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 1 1]
+ [0 0 0 0 0]
+ [0 0 0 1 0]
+ [1 0 0 0 0]]
+
+second connectivity matrix:
+[[1]
+ [1]
+ [1]
+ [1]
+ [1]]
+
+first layer weights:
+tensor(indices=tensor([[  0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+                          0,   0,   0,   1,   1,   1,   1,   1,   1,   1,   1,
+                          1,   1,   1,   1,   1,   1,   2,   2,   2,   2,   2,
+                          2,   2,   2,   2,   2,   2,   2,   2,   3,   3,   3,
+                          3,   3,   3,   3,   3,   3,   3,   3,   3,   3,   3,
+                          3,   4,   4,   4,   4,   4,   4,   4,   4,   4,   4,
+                          4,   4,   4],
+                       [  1,  21,  26,  27,  34,  43,  52,  78,  92,  94,  98,
+                        101, 102, 110,   0,   2,   7,  26,  40,  48,  50,  55,
+                         60,  77,  80,  95, 101, 102,   9,  20,  26,  27,  32,
+                         45,  50,  59,  62,  64,  88, 100, 104,   2,   4,  17,
+                         19,  30,  43,  46,  47,  55,  82,  90,  95, 101, 107,
+                        109,  18,  29,  47,  70,  72,  74,  78,  79,  80,  89,
+                         90, 104, 107]]),
+       values=tensor([ 3.7364, -2.1165, -2.2361,  2.2074, -1.1093, -0.2068,
+                      -1.4742, -1.4703, -1.3303,  3.3376, -1.5352,  0.6499,
+                       1.4580, -1.2215,  0.4999, -0.4687, -4.0895,  2.5633,
+                       0.7379,  0.8976,  0.1409, -1.3438,  1.5457,  1.8534,
+                      -3.9286,  3.3375, -1.1496, -1.5924,  0.0170,  1.6455,
+                       1.8742, -2.5368, -1.7780,  1.0708,  2.3583, -2.2546,
+                      -1.2977, -1.2189,  1.6512,  1.5168, -0.8778,  1.0803,
+                       3.0672,  3.6117,  1.3866, -0.8880,  1.2112, -0.4345,
+                       1.9574, -1.4989, -1.2804, -2.0851,  2.3786,  0.3288,
+                       0.3852, -2.0346, -0.1704, -2.1691,  2.4441,  2.2272,
+                       2.0217,  0.8717,  1.5380, -0.9516, -3.9602,  1.6473,
+                      -2.0471,  1.1240, -1.0269]),
+       size=(5, 111), nnz=69, layout=torch.sparse_coo)
+first layer biases:
+Parameter containing:
+tensor([ 1.4805, -0.5536, -0.9518,  1.6185, -0.2393], requires_grad=True)
+second layer weights:
+tensor(indices=tensor([[0, 0, 0, 0, 0],
+                       [0, 1, 2, 3, 4]]),
+       values=tensor([ 2.8688, -2.3583, -2.4552, -1.7598, -1.8145]),
+       size=(1, 5), nnz=5, layout=torch.sparse_coo)
+second layer biases:
+Parameter containing:
+tensor([2.2761], requires_grad=True)
+
+Runtime: 31804.97 seconds

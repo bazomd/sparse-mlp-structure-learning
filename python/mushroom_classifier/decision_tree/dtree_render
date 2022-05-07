@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<odor_n &le; 0.5<br/>gini = 0.499<br/>samples = 6500<br/>value = [[3147, 3353]<br/>[3353, 3147]]>, fillcolor="#ffffff"] ;
+1 [label=<stalk-root_c &le; 0.5<br/>gini = 0.278<br/>samples = 3671<br/>value = [[3059, 612]<br/>[612, 3059]]>, fillcolor="#f3c7a7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<stalk-surface-below-ring_y &le; 0.5<br/>gini = 0.125<br/>samples = 3245<br/>value = [[3027, 218]<br/>[218, 3027]]>, fillcolor="#eca16b"] ;
+1 -> 2 ;
+3 [label=<gini = 0.046<br/>samples = 3100<br/>value = [[3027, 73]<br/>[73, 3027]]>, fillcolor="#e78d4b"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 145<br/>value = [[0, 145]<br/>[145, 0]]>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<population_c &le; 0.5<br/>gini = 0.139<br/>samples = 426<br/>value = [[32, 394]<br/>[394, 32]]>, fillcolor="#eca470"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 394<br/>value = [[0, 394]<br/>[394, 0]]>, fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 32<br/>value = [[32, 0]<br/>[0, 32]]>, fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label=<spore-print-color_r &le; 0.5<br/>gini = 0.06<br/>samples = 2829<br/>value = [[88, 2741]<br/>[2741, 88]]>, fillcolor="#e89051"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<stalk-surface-below-ring_y &le; 0.5<br/>gini = 0.024<br/>samples = 2775<br/>value = [[34, 2741]<br/>[2741, 34]]>, fillcolor="#e68743"] ;
+8 -> 9 ;
+10 [label=<gini = 0.004<br/>samples = 2735<br/>value = [[6, 2729]<br/>[2729, 6]]>, fillcolor="#e5823b"] ;
+9 -> 10 ;
+11 [label=<gini = 0.42<br/>samples = 40<br/>value = [[28, 12]<br/>[12, 28]]>, fillcolor="#fbebdf"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 54<br/>value = [[54, 0]<br/>[0, 54]]>, fillcolor="#e58139"] ;
+8 -> 12 ;
+}
